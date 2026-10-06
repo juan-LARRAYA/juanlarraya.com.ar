@@ -52,7 +52,7 @@ function sessionToken(password: string): string {
 // ─── SVG Pie Chart ────────────────────────────────────────────────────────────
 
 const PIE_COLORS = [
-  '#C9A55A', '#E8734A', '#C0392B', '#8E44AD',
+  '#E2B54A', '#E8734A', '#C0392B', '#8E44AD',
   '#2980B9', '#27AE60', '#1ABC9C', '#F39C12',
 ];
 
