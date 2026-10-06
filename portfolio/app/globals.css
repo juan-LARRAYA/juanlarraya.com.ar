@@ -4,11 +4,11 @@
 
 :root {
   /* ── Backgrounds ── */
-  --bg-dark: #0A0B10;
-  --bg-dark-rgb: 10, 11, 16;
-  --bg-medium: #12141C;
-  --border-color: #1B1E29;
-  --border-color-subtle: #2A2E3D;
+  --bg-dark: #0B0D1C;
+  --bg-dark-rgb: 11, 13, 28;
+  --bg-medium: #141830;
+  --border-color: #1F2440;
+  --border-color-subtle: #30375C;
 
   /* ── Text ── */
   --text-primary: #F2F0E9;
@@ -19,12 +19,12 @@
 
   /* ── Accent amber ── */
   --heading-color: var(--text-primary);
-  --accent-amber: #FF8A3D;
-  --accent-amber-rgb: 255, 138, 61;
-  --accent-amber-hover: #F27A2A;
-  --accent-amber-light: #FFC58A;
-  --accent-amber-light-rgb: 255, 197, 138;
-  --glow-amber-light: 0 0 20px rgba(255, 197, 138, 0.6);
+  --accent-amber: #FF6B6B;
+  --accent-amber-rgb: 255, 107, 107;
+  --accent-amber-hover: #F25555;
+  --accent-amber-light: #FFB3A7;
+  --accent-amber-light-rgb: 255, 179, 167;
+  --glow-amber-light: 0 0 20px rgba(255, 179, 167, 0.6);
 
   /* ── Accent cyan ── */
   --accent-cyan: #00D4FF;
@@ -41,7 +41,7 @@
   --accent-linkedin-rgb: 0, 119, 181;
 
   /* ── Chart palette ── */
-  --chart-1: #FF8A3D;
+  --chart-1: #FF6B6B;
   --chart-2: #E8734A;
   --chart-3: #C0392B;
   --chart-4: #8E44AD;
@@ -59,28 +59,28 @@
 
 /* ── Light theme ── */
 [data-theme="light"] {
-  --bg-dark: #E8E5DC;
-  --bg-dark-rgb: 232, 229, 220;
-  --bg-medium: #CCCAC2;
-  --border-color: #B8B5AE;
-  --border-color-subtle: #A8A5A0;
+  --bg-dark: #EEF0F8;
+  --bg-dark-rgb: 238, 240, 248;
+  --bg-medium: #DCE0F0;
+  --border-color: #C3C9E0;
+  --border-color-subtle: #AEB5D2;
 
-  --text-primary: #1A1A1A;
-  --text-primary-rgb: 26, 26, 26;
+  --text-primary: #161A30;
+  --text-primary-rgb: 22, 26, 48;
   --text-subtle: #888888;
   --accent-muted: #777777;
 
-  --accent-amber: #D9651A;
-  --accent-amber-rgb: 217, 101, 26;
-  --accent-amber-hover: #B85414;
-  --accent-amber-light: #CC7A1E;
-  --accent-amber-light-rgb: 204, 122, 30;
-  --glow-amber-light: 0 0 20px rgba(204, 122, 30, 0.6);
+  --accent-amber: #D6403F;
+  --accent-amber-rgb: 214, 64, 63;
+  --accent-amber-hover: #B53130;
+  --accent-amber-light: #C9524A;
+  --accent-amber-light-rgb: 201, 82, 74;
+  --glow-amber-light: 0 0 20px rgba(201, 82, 74, 0.6);
 
   --heading-color: var(--text-primary);
 
-  --accent-cyan: #C75B16;
-  --accent-cyan-rgb: 199, 91, 22;
+  --accent-cyan: #4A55C9;
+  --accent-cyan-rgb: 74, 85, 201;
 }
 
 * {
