@@ -18,6 +18,38 @@ export default function Projects() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}
           className="projects-grid">
           <ProjectGridCard
+            name="Omarchy Power Saver"
+            tag="Linux · Energía"
+            description={t.projects.omarchyPower}
+            href="https://github.com/juan-LARRAYA/omarchy-power-saver"
+            image="/images/projects/omarchy-power-saver.png"
+            dark
+          />
+          <ProjectGridCard
+            name="Omarchy Voxtype"
+            tag="Linux · Voz"
+            description={t.projects.omarchyVoxtype}
+            href="https://github.com/juan-LARRAYA/omarchy-voxtype"
+            image="/images/projects/omarchy-voxtype.png"
+            dark
+          />
+          <ProjectGridCard
+            name="Omarchy Docker"
+            tag="Linux · Widget"
+            description={t.projects.omarchyDocker}
+            href="https://github.com/juan-LARRAYA/omarchy-docker"
+            image="/images/projects/omarchy-docker.png"
+            dark
+          />
+          <ProjectGridCard
+            name="BT Parking"
+            tag="Mobile · Bluetooth"
+            description={t.projects.btParking}
+            href="https://github.com/juan-LARRAYA/bt-parking"
+            image="/images/projects/bt-parking.png"
+            dark
+          />
+          <ProjectGridCard
             name="Binexa"
             tag="Proyecto Web"
             description={t.projects.binexa}
@@ -25,11 +57,27 @@ export default function Projects() {
             image="/images/projects/binexa.png"
           />
           <ProjectGridCard
+            name="Linda"
+            tag="Web3 · Mobile"
+            description={t.projects.linda}
+            href="https://github.com/OwnerOfJK/linda"
+            image="/images/projects/linda.png"
+            imgPosition="center"
+          />
+          <ProjectGridCard
             name="openVision"
             tag="IA · Computer Vision"
             description={t.projects.openVision}
             href="https://vision.juanlarraya.com.ar"
             image="/images/projects/OpenVision Demo.png"
+            dark
+          />
+          <ProjectGridCard
+            name="Votación Barrial"
+            tag="Proyecto Web"
+            description={t.projects.votacion}
+            href="https://votacion.juanlarraya.com.ar"
+            image="/images/projects/votacion-barrial.png"
             dark
           />
           <ProjectGridCard
@@ -46,58 +94,6 @@ export default function Projects() {
             href="https://github.com/juan-LARRAYA/TPP"
             image="/images/projects/TPP Photo 1.png"
             dark
-          />
-          <ProjectGridCard
-            name="Linda"
-            tag="Web3 · Mobile"
-            description={t.projects.linda}
-            href="https://github.com/OwnerOfJK/linda"
-            image="/images/projects/linda.png"
-            imgPosition="center"
-          />
-          <ProjectGridCard
-            name="Votación Barrial"
-            tag="Proyecto Web"
-            description={t.projects.votacion}
-            href="https://votacion.juanlarraya.com.ar"
-            image="/images/projects/votacion-barrial.png"
-            dark
-          />
-          <ProjectGridCard
-            name="Voice 2 Text"
-            tag="IA · Web"
-            description={t.projects.voice2text}
-            href="https://voice.juanlarraya.com.ar"
-            image="/images/projects/voice2text.png"
-            dark
-          />
-          <ProjectGridCard
-            name="Omarchy Docker"
-            tag="Linux · Widget"
-            description={t.projects.omarchyDocker}
-            href="https://github.com/juan-LARRAYA/omarchy-docker"
-            compact
-          />
-          <ProjectGridCard
-            name="Omarchy Voxtype"
-            tag="Linux · Voz"
-            description={t.projects.omarchyVoxtype}
-            href="https://github.com/juan-LARRAYA/omarchy-voxtype"
-            compact
-          />
-          <ProjectGridCard
-            name="Omarchy Power Saver"
-            tag="Linux · Energía"
-            description={t.projects.omarchyPower}
-            href="https://github.com/juan-LARRAYA/omarchy-power-saver"
-            compact
-          />
-          <ProjectGridCard
-            name="BT Parking"
-            tag="Mobile · Bluetooth"
-            description={t.projects.btParking}
-            href="https://github.com/juan-LARRAYA/bt-parking"
-            compact
           />
         </div>
 
