@@ -37,7 +37,7 @@ export default function Projects() {
             tag="Mobile · Bluetooth"
             description={t.projects.btParking}
             href="https://github.com/juan-LARRAYA/bt-parking"
-            image="/images/projects/bt-parking.png"
+            image="/images/projects/bt-parking-v2.png"
             dark
           />
           <ProjectGridCard

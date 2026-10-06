@@ -19,12 +19,12 @@
 
   /* ── Accent amber ── */
   --heading-color: var(--text-primary);
-  --accent-amber: #E6E6E6;
-  --accent-amber-rgb: 230, 230, 230;
-  --accent-amber-hover: #FFFFFF;
-  --accent-amber-light: #FFFFFF;
-  --accent-amber-light-rgb: 255, 255, 255;
-  --glow-amber-light: 0 0 20px rgba(255, 255, 255, 0.45);
+  --accent-amber: #C9A55A;
+  --accent-amber-rgb: 201, 165, 90;
+  --accent-amber-hover: #E3C98A;
+  --accent-amber-light: #E3C98A;
+  --accent-amber-light-rgb: 227, 201, 138;
+  --glow-amber-light: 0 0 20px rgba(227, 201, 138, 0.5);
 
   /* ── Accent cyan ── */
   --accent-cyan: #B5B5B5;
@@ -41,7 +41,7 @@
   --accent-linkedin-rgb: 0, 119, 181;
 
   /* ── Chart palette ── */
-  --chart-1: #E6E6E6;
+  --chart-1: #C9A55A;
   --chart-2: #E8734A;
   --chart-3: #C0392B;
   --chart-4: #8E44AD;
@@ -70,12 +70,12 @@
   --text-subtle: #888888;
   --accent-muted: #777777;
 
-  --accent-amber: #1A1A1A;
-  --accent-amber-rgb: 26, 26, 26;
-  --accent-amber-hover: #000000;
-  --accent-amber-light: #333333;
-  --accent-amber-light-rgb: 51, 51, 51;
-  --glow-amber-light: 0 0 20px rgba(0, 0, 0, 0.35);
+  --accent-amber: #8A6A2C;
+  --accent-amber-rgb: 138, 106, 44;
+  --accent-amber-hover: #6B5020;
+  --accent-amber-light: #A07C38;
+  --accent-amber-light-rgb: 160, 124, 56;
+  --glow-amber-light: 0 0 20px rgba(160, 124, 56, 0.4);
 
   --heading-color: var(--text-primary);
 
