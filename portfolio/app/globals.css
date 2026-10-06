@@ -4,31 +4,31 @@
 
 :root {
   /* ── Backgrounds ── */
-  --bg-dark: #0B0D1C;
-  --bg-dark-rgb: 11, 13, 28;
-  --bg-medium: #141830;
-  --border-color: #1F2440;
-  --border-color-subtle: #30375C;
+  --bg-dark: #0C0B0C;
+  --bg-dark-rgb: 12, 11, 12;
+  --bg-medium: #151415;
+  --border-color: #222022;
+  --border-color-subtle: #3a3739;
 
   /* ── Text ── */
-  --text-primary: #F2F0E9;
-  --text-primary-rgb: 242, 240, 233;
-  --text-subtle: #888888;
-  --accent-muted: #555555;
-  --accent-muted-rgb: 85, 85, 85;
+  --text-primary: #FAFCFB;
+  --text-primary-rgb: 250, 252, 251;
+  --text-subtle: #8A8588;
+  --accent-muted: #8A8588;
+  --accent-muted-rgb: 138, 133, 136;
 
   /* ── Accent amber ── */
   --heading-color: var(--text-primary);
-  --accent-amber: #FF6B6B;
-  --accent-amber-rgb: 255, 107, 107;
-  --accent-amber-hover: #F25555;
-  --accent-amber-light: #FFB3A7;
-  --accent-amber-light-rgb: 255, 179, 167;
-  --glow-amber-light: 0 0 20px rgba(255, 179, 167, 0.6);
+  --accent-amber: #E2DDDC;
+  --accent-amber-rgb: 226, 221, 220;
+  --accent-amber-hover: #FAFCFB;
+  --accent-amber-light: #FAFCFB;
+  --accent-amber-light-rgb: 250, 252, 251;
+  --glow-amber-light: 0 0 20px rgba(250, 252, 251, 0.45);
 
   /* ── Accent cyan ── */
-  --accent-cyan: #00D4FF;
-  --accent-cyan-rgb: 0, 212, 255;
+  --accent-cyan: #A5A0B6;
+  --accent-cyan-rgb: 165, 160, 182;
 
   /* ── Semantic ── */
   --accent-red: #EF4444;
@@ -41,7 +41,7 @@
   --accent-linkedin-rgb: 0, 119, 181;
 
   /* ── Chart palette ── */
-  --chart-1: #FF6B6B;
+  --chart-1: #E2DDDC;
   --chart-2: #E8734A;
   --chart-3: #C0392B;
   --chart-4: #8E44AD;

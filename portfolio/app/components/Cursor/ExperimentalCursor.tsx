@@ -80,8 +80,8 @@ export default function ExperimentalCursor() {
     'hover-link': {
       width: 120,
       height: 120,
-      backgroundColor: 'rgba(255, 107, 107, 0.10)',
-      borderColor: 'rgba(255, 107, 107, 0.5)',
+      backgroundColor: 'rgba(226, 221, 220, 0.10)',
+      borderColor: 'rgba(226, 221, 220, 0.5)',
       borderWidth: 1.5,
       scale: 1,
     },
@@ -96,8 +96,8 @@ export default function ExperimentalCursor() {
     dragging: {
       width: 60,
       height: 60,
-      backgroundColor: 'rgba(255, 107, 107, 0.2)',
-      borderColor: 'rgba(255, 107, 107, 0.6)',
+      backgroundColor: 'rgba(226, 221, 220, 0.2)',
+      borderColor: 'rgba(226, 221, 220, 0.6)',
       borderWidth: 1.5,
       scale: 0.9,
     },
@@ -106,9 +106,9 @@ export default function ExperimentalCursor() {
   // Dot styles by state
   const dotVariants = {
     default: { width: 6, height: 6, backgroundColor: '#00D4FF' },
-    'hover-link': { width: 8, height: 8, backgroundColor: '#FF6B6B' },
+    'hover-link': { width: 8, height: 8, backgroundColor: '#E2DDDC' },
     'hover-image': { width: 4, height: 4, backgroundColor: '#00D4FF' },
-    dragging: { width: 10, height: 10, backgroundColor: '#FF6B6B' },
+    dragging: { width: 10, height: 10, backgroundColor: '#E2DDDC' },
   };
 
   if (isTouchDevice) return null;
