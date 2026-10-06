@@ -52,7 +52,7 @@ function sessionToken(password: string): string {
 // ─── SVG Pie Chart ────────────────────────────────────────────────────────────
 
 const PIE_COLORS = [
-  '#F5A623', '#E8734A', '#C0392B', '#8E44AD',
+  '#FF8A3D', '#E8734A', '#C0392B', '#8E44AD',
   '#2980B9', '#27AE60', '#1ABC9C', '#F39C12',
 ];
 
@@ -99,7 +99,7 @@ function PieChart({ data, size = 180 }: { data: [string, number][]; size?: numbe
           key={i}
           d={describeArc(cx, cy, r, s.startAngle, s.endAngle)}
           fill={s.color}
-          stroke="#080808"
+          stroke="#0A0B10"
           strokeWidth="1.5"
         />
       ))}

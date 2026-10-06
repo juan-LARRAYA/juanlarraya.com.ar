@@ -4,11 +4,11 @@
 
 :root {
   /* ── Backgrounds ── */
-  --bg-dark: #080808;
-  --bg-dark-rgb: 8, 8, 8;
-  --bg-medium: #111111;
-  --border-color: #1A1A1A;
-  --border-color-subtle: #2A2A2A;
+  --bg-dark: #0A0B10;
+  --bg-dark-rgb: 10, 11, 16;
+  --bg-medium: #12141C;
+  --border-color: #1B1E29;
+  --border-color-subtle: #2A2E3D;
 
   /* ── Text ── */
   --text-primary: #F2F0E9;
@@ -19,12 +19,12 @@
 
   /* ── Accent amber ── */
   --heading-color: var(--text-primary);
-  --accent-amber: #F5A623;
-  --accent-amber-rgb: 245, 166, 35;
-  --accent-amber-hover: #e8971f;
-  --accent-amber-light: #F2D478;
-  --accent-amber-light-rgb: 242, 212, 120;
-  --glow-amber-light: 0 0 20px rgba(242, 212, 120, 0.6);
+  --accent-amber: #FF8A3D;
+  --accent-amber-rgb: 255, 138, 61;
+  --accent-amber-hover: #F27A2A;
+  --accent-amber-light: #FFC58A;
+  --accent-amber-light-rgb: 255, 197, 138;
+  --glow-amber-light: 0 0 20px rgba(255, 197, 138, 0.6);
 
   /* ── Accent cyan ── */
   --accent-cyan: #00D4FF;
@@ -41,7 +41,7 @@
   --accent-linkedin-rgb: 0, 119, 181;
 
   /* ── Chart palette ── */
-  --chart-1: #F5A623;
+  --chart-1: #FF8A3D;
   --chart-2: #E8734A;
   --chart-3: #C0392B;
   --chart-4: #8E44AD;
@@ -70,17 +70,17 @@
   --text-subtle: #888888;
   --accent-muted: #777777;
 
-  --accent-amber: #D4850A;
-  --accent-amber-rgb: 212, 133, 10;
-  --accent-amber-hover: #B87008;
-  --accent-amber-light: #C89010;
-  --accent-amber-light-rgb: 200, 144, 16;
-  --glow-amber-light: 0 0 20px rgba(200, 144, 16, 0.6);
+  --accent-amber: #D9651A;
+  --accent-amber-rgb: 217, 101, 26;
+  --accent-amber-hover: #B85414;
+  --accent-amber-light: #CC7A1E;
+  --accent-amber-light-rgb: 204, 122, 30;
+  --glow-amber-light: 0 0 20px rgba(204, 122, 30, 0.6);
 
   --heading-color: var(--text-primary);
 
-  --accent-cyan: #C4820A;
-  --accent-cyan-rgb: 196, 130, 10;
+  --accent-cyan: #C75B16;
+  --accent-cyan-rgb: 199, 91, 22;
 }
 
 * {
