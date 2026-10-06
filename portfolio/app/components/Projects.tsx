@@ -71,6 +71,34 @@ export default function Projects() {
             image="/images/projects/voice2text.png"
             dark
           />
+          <ProjectGridCard
+            name="Omarchy Docker"
+            tag="Linux · Widget"
+            description={t.projects.omarchyDocker}
+            href="https://github.com/juan-LARRAYA/omarchy-docker"
+            compact
+          />
+          <ProjectGridCard
+            name="Omarchy Voxtype"
+            tag="Linux · Voz"
+            description={t.projects.omarchyVoxtype}
+            href="https://github.com/juan-LARRAYA/omarchy-voxtype"
+            compact
+          />
+          <ProjectGridCard
+            name="Omarchy Power Saver"
+            tag="Linux · Energía"
+            description={t.projects.omarchyPower}
+            href="https://github.com/juan-LARRAYA/omarchy-power-saver"
+            compact
+          />
+          <ProjectGridCard
+            name="BT Parking"
+            tag="Mobile · Bluetooth"
+            description={t.projects.btParking}
+            href="https://github.com/juan-LARRAYA/bt-parking"
+            compact
+          />
         </div>
 
       </div>

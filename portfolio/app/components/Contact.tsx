@@ -60,11 +60,6 @@ export default function Contact() {
             <span>CV</span>
           </Link>
 
-          <Link href="/francoin"
-            style={{ display: 'inline-flex', alignItems: 'center', gap: '0.6rem', padding: '12px 24px', borderRadius: '999px', border: '1px solid rgba(var(--accent-amber-rgb), 0.3)', color: 'rgba(var(--accent-amber-rgb), 0.8)', background: 'rgba(var(--accent-amber-rgb), 0.06)', fontSize: '0.875rem', fontWeight: 500, textDecoration: 'none' }}
-          >
-            <span>$FRC</span>
-          </Link>
         </motion.div>
 
       </div>

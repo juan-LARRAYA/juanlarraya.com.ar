@@ -12,9 +12,10 @@ interface ProjectCardProps {
   dark?: boolean;
   contain?: boolean;
   imgPosition?: string;
+  compact?: boolean;
 }
 
-export default function ProjectGridCard({ name, description, href, image, tag, dark = false, contain = false, imgPosition = 'top' }: ProjectCardProps) {
+export default function ProjectGridCard({ name, description, href, image, tag, dark = false, contain = false, imgPosition = 'top', compact = false }: ProjectCardProps) {
   const isExternal = href.startsWith('http');
   const bg = 'var(--bg-medium)';
   const textColor = 'var(--text-primary)';
@@ -24,8 +25,8 @@ export default function ProjectGridCard({ name, description, href, image, tag, d
       href={href}
       target={isExternal ? '_blank' : undefined}
       rel={isExternal ? 'noopener noreferrer' : undefined}
-      style={{ background: bg, minHeight: '420px', borderRadius: '24px', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}
-      whileHover={{ y: -6, scale: 1.01 }}
+      style={{ background: bg, minHeight: compact ? '220px' : '420px', borderRadius: '28px', border: '1px solid var(--border-color-subtle)', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}
+      whileHover={{ y: -6, scale: 1.01, borderColor: 'rgba(var(--accent-amber-rgb), 0.55)', boxShadow: '0 12px 40px rgba(var(--accent-amber-rgb), 0.12)' }}
       transition={{ duration: 0.25, ease: [0.33, 1, 0.68, 1] }}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}

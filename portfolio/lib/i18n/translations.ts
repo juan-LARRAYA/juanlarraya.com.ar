@@ -30,6 +30,10 @@ export const translations = {
       linda: 'App de localización en tiempo real con privacidad garantizada mediante TEE y blockchain.',
       votacion: 'Sistema de votación para asambleas barriales con resultados en tiempo real.',
       voice2text: 'Transcripción de voz a texto en tiempo real usando modelos de IA en el browser.',
+      omarchyDocker: 'Widget de Docker para Omarchy: contenedores, estado, controles y enlaces a servicios desde la barra.',
+      omarchyVoxtype: 'Indicador de estado del dictado por voz (Voxtype) en la barra de Omarchy.',
+      omarchyPower: 'Cambia a modo ahorro y apaga las pantallas tras un tiempo de inactividad, para Omarchy.',
+      btParking: 'Para no perder el auto: detecta el Bluetooth del vehículo y guarda dónde estacionaste.',
     },
     contact: {
       heading: '¿Hablamos?',
@@ -73,6 +77,10 @@ export const translations = {
       linda: 'Real-time location app with privacy guaranteed by TEE and blockchain.',
       votacion: 'Voting system for neighborhood assemblies with real-time results.',
       voice2text: 'Real-time speech-to-text transcription using AI models in the browser.',
+      omarchyDocker: 'Docker widget for Omarchy: containers, status, controls and service links right in the bar.',
+      omarchyVoxtype: 'Voice dictation (Voxtype) state indicator for the Omarchy bar.',
+      omarchyPower: 'Switches to power-saver and turns displays off after idle, for Omarchy.',
+      btParking: "Never lose your car: detects the car's Bluetooth and remembers where you parked.",
     },
     contact: {
       heading: "Let's talk?",
