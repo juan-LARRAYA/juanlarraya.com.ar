@@ -7,7 +7,7 @@ function sessionToken(password: string): string {
   return crypto.createHmac('sha256', password).update('metrics_session_v1').digest('hex');
 }
 
-const MAX_ATTEMPTS = 5;
+const MAX_ATTEMPTS = 20;
 const WINDOW_MS = 15 * 60 * 1000;
 
 export async function POST(req: NextRequest) {
