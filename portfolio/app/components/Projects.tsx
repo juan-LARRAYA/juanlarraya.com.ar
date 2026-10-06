@@ -18,19 +18,10 @@ export default function Projects() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}
           className="projects-grid">
           <ProjectGridCard
-            name="Omarchy Power Saver"
-            tag="Linux · Energía"
-            description={t.projects.omarchyPower}
-            href="https://github.com/juan-LARRAYA/omarchy-power-saver"
-            image="/images/projects/omarchy-power-saver.png"
-            dark
-          />
-          <ProjectGridCard
-            name="Omarchy Voxtype"
-            tag="Linux · Voz"
-            description={t.projects.omarchyVoxtype}
-            href="https://github.com/juan-LARRAYA/omarchy-voxtype"
-            image="/images/projects/omarchy-voxtype.png"
+            name="Servicios Web"
+            tag="Linux · Widget"
+            description={t.projects.serviciosWeb}
+            image="/images/projects/servicios-web.png"
             dark
           />
           <ProjectGridCard

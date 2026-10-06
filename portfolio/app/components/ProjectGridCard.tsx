@@ -6,7 +6,7 @@ import Image from 'next/image';
 interface ProjectCardProps {
   name: string;
   description: string;
-  href: string;
+  href?: string;
   image?: string;
   tag?: string;
   dark?: boolean;
@@ -16,7 +16,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectGridCard({ name, description, href, image, tag, dark = false, contain = false, imgPosition = 'top', compact = false }: ProjectCardProps) {
-  const isExternal = href.startsWith('http');
+  const isExternal = Boolean(href?.startsWith('http'));
   const bg = 'var(--bg-medium)';
   const textColor = 'var(--text-primary)';
 
