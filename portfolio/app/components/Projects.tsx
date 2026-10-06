@@ -29,7 +29,7 @@ export default function Projects() {
             tag="Linux · Widget"
             description={t.projects.omarchyDocker}
             href="https://github.com/juan-LARRAYA/omarchy-docker"
-            image="/images/projects/omarchy-docker.png"
+            image="/images/projects/omarchy-docker-demo.png"
             dark
           />
           <ProjectGridCard
