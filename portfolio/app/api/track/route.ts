@@ -35,16 +35,24 @@ function parseUserAgent(ua: string) {
   return { browser, os, device_type };
 }
 
+// Cap every client-provided string so a malicious caller cannot bloat the table.
+function clip(value: unknown, max: number): string | null {
+  return typeof value === 'string' && value ? value.slice(0, max) : null;
+}
+function dimension(value: unknown): number | null {
+  return typeof value === 'number' && Number.isFinite(value) && value > 0 && value < 20000 ? Math.round(value) : null;
+}
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
-    const ua = req.headers.get('user-agent') || body.user_agent || '';
+    const ua = (req.headers.get('user-agent') || clip(body.user_agent, 300) || '').slice(0, 300);
     const parsed = parseUserAgent(ua);
 
     // Override OS with client-provided platform when UA is ambiguous (e.g. Android UA contains "Linux")
     let os = parsed.os;
-    const clientPlatform: string = (body.client_platform || '').toLowerCase();
+    const clientPlatform: string = (clip(body.client_platform, 40) || '').toLowerCase();
     if (clientPlatform === 'android') os = 'Android';
     else if (clientPlatform === 'linux') os = 'Linux';
     else if (clientPlatform === 'macintel' || clientPlatform === 'macos') os = 'macOS';
@@ -60,12 +68,12 @@ export async function POST(req: NextRequest) {
       browser,
       os,
       device_type,
-      language: body.language || null,
-      screen_width: body.screen_width || null,
-      screen_height: body.screen_height || null,
-      referrer: body.referrer || null,
+      language: clip(body.language, 20),
+      screen_width: dimension(body.screen_width),
+      screen_height: dimension(body.screen_height),
+      referrer: clip(body.referrer, 300),
       country,
-      page_path: body.page_path || '/',
+      page_path: clip(body.page_path, 200) || '/',
     });
 
     if (error) {
