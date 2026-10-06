@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
+import { clientIp, rateLimit } from '@/lib/rateLimit';
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -44,6 +45,10 @@ function dimension(value: unknown): number | null {
 }
 
 export async function POST(req: NextRequest) {
+  // 30 visits per minute per IP is far above real use; beyond that, drop silently.
+  if (rateLimit(`track:${clientIp(req)}`, 30, 60 * 1000)) {
+    return NextResponse.json({ ok: true });
+  }
   try {
     const body = await req.json();
 
