@@ -72,16 +72,16 @@ export default function ExperimentalCursor() {
     default: {
       width: 80,
       height: 80,
-      backgroundColor: 'rgba(0, 212, 255, 0.08)',
-      borderColor: 'rgba(0, 212, 255, 0.35)',
+      backgroundColor: 'rgba(255, 255, 255, 0.08)',
+      borderColor: 'rgba(255, 255, 255, 0.35)',
       borderWidth: 1,
       scale: 1,
     },
     'hover-link': {
       width: 120,
       height: 120,
-      backgroundColor: 'rgba(230, 230, 230, 0.10)',
-      borderColor: 'rgba(230, 230, 230, 0.5)',
+      backgroundColor: 'rgba(255, 255, 255, 0.10)',
+      borderColor: 'rgba(255, 255, 255, 0.5)',
       borderWidth: 1.5,
       scale: 1,
     },
@@ -89,15 +89,15 @@ export default function ExperimentalCursor() {
       width: 100,
       height: 100,
       backgroundColor: 'transparent',
-      borderColor: 'rgba(0, 212, 255, 0.7)',
+      borderColor: 'rgba(255, 255, 255, 0.7)',
       borderWidth: 2,
       scale: 1,
     },
     dragging: {
       width: 60,
       height: 60,
-      backgroundColor: 'rgba(230, 230, 230, 0.2)',
-      borderColor: 'rgba(230, 230, 230, 0.6)',
+      backgroundColor: 'rgba(255, 255, 255, 0.2)',
+      borderColor: 'rgba(255, 255, 255, 0.6)',
       borderWidth: 1.5,
       scale: 0.9,
     },
@@ -105,10 +105,10 @@ export default function ExperimentalCursor() {
 
   // Dot styles by state
   const dotVariants = {
-    default: { width: 6, height: 6, backgroundColor: '#00D4FF' },
-    'hover-link': { width: 8, height: 8, backgroundColor: '#E6E6E6' },
-    'hover-image': { width: 4, height: 4, backgroundColor: '#00D4FF' },
-    dragging: { width: 10, height: 10, backgroundColor: '#E6E6E6' },
+    default: { width: 6, height: 6, backgroundColor: '#FFFFFF' },
+    'hover-link': { width: 8, height: 8, backgroundColor: '#FFFFFF' },
+    'hover-image': { width: 4, height: 4, backgroundColor: '#FFFFFF' },
+    dragging: { width: 10, height: 10, backgroundColor: '#FFFFFF' },
   };
 
   if (isTouchDevice) return null;
@@ -119,6 +119,7 @@ export default function ExperimentalCursor() {
       <motion.div
         className="fixed top-0 left-0 pointer-events-none z-[9998] rounded-full border-solid"
         style={{
+          mixBlendMode: 'difference',
           x: circleX,
           y: circleY,
           translateX: '-50%',
@@ -135,6 +136,7 @@ export default function ExperimentalCursor() {
       <motion.div
         className="fixed top-0 left-0 pointer-events-none z-[9999] rounded-full"
         style={{
+          mixBlendMode: 'difference',
           x: dotX,
           y: dotY,
           translateX: '-50%',
