@@ -138,13 +138,14 @@ export default async function MetricsPage() {
   const password = process.env.METRICS_PASSWORD;
   const cookieStore = await cookies();
   const session = cookieStore.get('metrics_session');
+  const expectedToken = password ? sessionToken(password) : null;
 
   const authenticated =
-    password &&
-    session?.value &&
+    expectedToken !== null &&
+    session?.value.length === expectedToken.length &&
     crypto.timingSafeEqual(
       Buffer.from(session.value),
-      Buffer.from(sessionToken(password))
+      Buffer.from(expectedToken)
     );
 
   if (!authenticated) {
